@@ -1,5 +1,5 @@
 # React-Native-Random-Gradient
-A component which helps generate a random gradient colors everytime you refresh. 
+A component which helps generate a random background gradient everytime you supply a new string. 
 
 <img src="screenshot/demo.png" height="400" />
 

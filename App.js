@@ -5,7 +5,7 @@ import RandomGradient from './Component/RandomGradient';
 const App = () => {
   return (
     <SafeAreaView>
-      <RandomGradient name={'green'}/>
+      <RandomGradient name={'blue'} />
     </SafeAreaView>
   );
 };

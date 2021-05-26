@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 const hash = require('string-hash');
@@ -7,11 +7,10 @@ const color = require('tinycolor2');
 
 const RandomGradient = ({name}) => {
   const [colors, setColors] = useState(['#000000', '#000000']);
-  console.log('findThis', name);
 
   useEffect(() => {
-    this.randomGenerate(name);
-  }, [1]);
+    randomGenerate(name);
+  }, []);
 
   randomGenerate = uid => {
     if (uid) {
@@ -24,15 +23,22 @@ const RandomGradient = ({name}) => {
     }
   };
   return (
-    <LinearGradient
-      colors={colors}
-      style={styles.sectionContainer}></LinearGradient>
+    <>
+      <LinearGradient
+        colors={colors}
+        style={styles.sectionContainer}></LinearGradient>
+    </>
   );
 };
 const styles = StyleSheet.create({
   sectionContainer: {
     padding: 100,
     margin: 10,
+  },
+  textContainer: {
+    textAlign: 'center',
+    flexDirection: 'row',
+    fontSize: 30,
   },
 });
 

@@ -1,7 +1,7 @@
 # React-Native-Random-Gradient
 A component which helps generate a random gradient colors everytime you refresh. 
 
-<img src="screenshot/demo.png" height="300" />
+<img src="screenshot/demo.png" height="400" />
 
 # Run
 - yarn
